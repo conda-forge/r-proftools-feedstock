@@ -5,7 +5,7 @@ Home: https://CRAN.R-project.org/package=proftools
 
 Package license: GPL
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Tools for examining Rprof profile output.
 
