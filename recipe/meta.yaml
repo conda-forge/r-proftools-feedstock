@@ -1,4 +1,4 @@
-{% set version = '0.99-2' %}
+{% set version = "0.99-3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/proftools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/proftools/proftools_{{ version }}.tar.gz
-  sha256: 20bbfe25f0f3274128f311e6ed51a880115ff608dddad10d6d25f4a7c111a0ef
+  sha256: e034eb1531af54013143da3e15229e1d4c2260f8eb79c93846014db3bdefb724
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -38,7 +38,7 @@ about:
   license: GPL
   summary: Tools for examining Rprof profile output.
   license_family: GPL
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
