@@ -3,7 +3,7 @@ About r-proftools
 
 Home: https://CRAN.R-project.org/package=proftools
 
-Package license: GPL
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-proftools-feedstock/blob/master/LICENSE.txt)
 
