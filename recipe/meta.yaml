@@ -35,7 +35,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=proftools
-  license: GPL
+  license: GPL-2.0-or-later
   summary: Tools for examining Rprof profile output.
   license_family: GPL
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
