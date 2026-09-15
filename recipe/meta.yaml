@@ -1,18 +1,18 @@
-{% set version = "0.99-3" %}
+{% set version = "0.99-4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-proftools
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/proftools_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/proftools/proftools_{{ version }}.tar.gz
-  sha256: e034eb1531af54013143da3e15229e1d4c2260f8eb79c93846014db3bdefb724
+  sha256: 6bfb38c06f3eab43e6173e867e1f950205d2d4db8d6a1663cc72fe7c4fad971a
 
 build:
-  number: 4
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
